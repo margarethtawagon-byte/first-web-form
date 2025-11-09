@@ -8,30 +8,32 @@
 </head>
 <body>
     <h1>My First Web Form</h1>
-     <form action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
-    <fieldset>
-        <legend>Name Information</legend>
-        <label for="firstname">First Name:</label>
-        <input type="text" class="name-info" id="firstname" placeholder="Please type your first name">
-        <label for="lastname">Last Name:</label>
-        <input type="text" class="name-info" id="lastname" placeholder="Please type your last name">
-    </fieldset>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+  <fieldset>
+    <legend>Name Information:</legend>
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" placeholder="Please type your first name">
 
-    <fieldset>
-        <legend>Contact Information</legend>
-        <label for="email">Email:</label>
-        <input type="email" name="contact-info" id="email" placeholder="Input your email address">
-        <label for="telephone">Phone:</label>
-        <input type="tel" class="contact-info" id="telephone" placeholder="Input your mobile number">
-    </fieldset>
-    <fieldset>
-        <legend>Birthday</legend>
-        <label for="dob">Date of Birth:</label>
-        <input type="date" name="dob" id="dob"><br>
-    </fieldset>
-    
-    <input type="submit" value="Submit">
-    
-    </form>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Please type your last name">
+  </fieldset>
+
+  <fieldset>
+    <legend>Contact Information:</legend>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Input your email address">
+
+    <label for="telephone">Phone:</label>
+    <input type="tel" id="telephone" name="telephone" placeholder="Input your mobile number">
+  </fieldset>
+
+  <fieldset>
+    <legend>Birthday:</legend>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+  </fieldset>
+
+  <input type="submit" value="Submit">
+</form>
 </body>
 </html>
